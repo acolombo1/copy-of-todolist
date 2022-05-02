@@ -1,0 +1,89 @@
+body {
+  background-color: rgb(245, 245, 245);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+h1 {
+  color: rgb(245, 245, 245);
+}
+
+.listcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainlist {
+  background-color: white;
+  width: 50%;
+  min-width: 200px;
+  max-width: 400px;
+  padding: 0;
+  list-style: none;
+  box-shadow: rgb(205, 205, 205) 2px 2px 5px;
+}
+
+li {
+  display: flex;
+  border-bottom: 2px solid rgb(245, 245, 245);
+  border-left: 2px solid rgb(245, 245, 245);
+  padding: 15px;
+  align-items: center;
+}
+
+li:nth-child(2) {
+  color: rgb(180, 180, 180);
+  font-style: italic;
+  justify-content: space-between;
+}
+
+li:nth-last-child(1) {
+  background-color: rgb(245, 245, 245);
+  justify-content: center;
+}
+
+.tachado {
+  text-decoration: line-through;
+}
+
+.description {
+  padding: 0 0 0 10px;
+  border: 0;
+  outline: none;
+  resize: none;
+  font-family: inherit;
+  font-size: inherit;
+  width: calc(100% - 50px);
+  overflow: hidden;
+  height: 15px;
+}
+
+.inplaceedit {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0;
+  width: calc(50% - 60px);
+  max-width: 350px;
+}
+
+.inplaceedit:focus {
+  outline: none;
+}
+
+.enterimg {
+  cursor: pointer;
+}
+
+.divfinal:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.recyclebin {
+  cursor: pointer;
+}
+
+.colorbg {
+  background-color: beige;
+}
