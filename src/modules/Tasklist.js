@@ -227,8 +227,6 @@ export default class Tasklist {
       const recyclebin = document.createElement('img');
       recyclebin.classList.add('recyclebin');
       recyclebin.src = recyclebinimg;
-      recyclebin.height = '15';
-      recyclebin.width = '15';
       parentli.appendChild(recyclebin);
       recyclebin.addEventListener('mousedown', this.#deleteitem);
       parentli.querySelector('textarea').addEventListener('blur', this.#blurred);
